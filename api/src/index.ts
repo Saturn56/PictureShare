@@ -1,8 +1,11 @@
-import * as express from "express";
+import * as dotenv from "dotenv";
+dotenv.config();
+
+import express, { Request, Response } from 'express';
 import routes from "./routes";
 
 
-const app = express()
+const app =  express()
 
 
 let port = 3000;
